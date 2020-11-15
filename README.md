@@ -1,5 +1,3 @@
-# goBarberMobile
-
 #### <div align="right">- Projeto Finalizado <div>
 # <div align="center">Exercício Typescript e React Native<div>
 ## <div align="center">Exercício de um aplicativo mobileutilizando Typescript e React Native simulando acesso a um sistema de prestação de serviço de barbearia<div>
