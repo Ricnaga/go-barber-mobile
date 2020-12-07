@@ -28,6 +28,8 @@
     "prettier"
   ],
   "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error", {"variables": false}],
     "camelcase": [0, {"properties": "always"}],
     "prettier/prettier": "error",
     "react/jsx-one-expression-per-line": "off",
