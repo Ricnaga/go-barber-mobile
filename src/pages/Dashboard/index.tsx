@@ -41,7 +41,7 @@ const Dashboard: React.FC = () => {
   }, []);
 
   const navigateToProfile = useCallback(() => {
-    navigate('Profile');
+    // navigate('Profile');
     signOut();
   }, [signOut]);
 
@@ -69,6 +69,7 @@ const Dashboard: React.FC = () => {
           <UserAvatar source={{ uri: user.avatar_url }} />
         </ProfileButton>
       </Header>
+
       <ProvidersList
         data={providers}
         keyExtractor={provider => provider.id}
@@ -80,6 +81,7 @@ const Dashboard: React.FC = () => {
             onPress={() => navigateToCreateAppointment(provider.id)}
           >
             <ProviderAvatar source={{ uri: provider.avatar_url }} />
+
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>
 
