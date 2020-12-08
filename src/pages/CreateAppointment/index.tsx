@@ -1,9 +1,9 @@
-import { useNavigation, useRoute } from '@react-navigation/native';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import { format } from 'date-fns';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
 import { Alert, Platform } from 'react-native';
+import { format } from 'date-fns';
+import DateTimePicker from '@react-native-community/datetimepicker';
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 import {
@@ -51,6 +51,7 @@ const CreateAppointment: React.FC = () => {
   const { user } = useAuth();
   const route = useRoute();
   const { goBack, navigate } = useNavigation();
+
   const routeParams = route.params as RouteParams;
 
   const [availability, setAvailability] = useState<AvailabilityItem[]>([]);
