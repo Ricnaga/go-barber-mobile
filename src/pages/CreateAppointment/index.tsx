@@ -70,7 +70,7 @@ const CreateAppointment: React.FC = () => {
 
   useEffect(() => {
     api
-      .get(`providers/${selectedProvider}/day-availability`, {
+      .get(`/providers/${selectedProvider}/day-availability`, {
         params: {
           year: selectedDate.getFullYear(),
           month: selectedDate.getMonth() + 1,
@@ -187,6 +187,7 @@ const CreateAppointment: React.FC = () => {
             )}
           />
         </ProvidersListContainer>
+
         <Calendar>
           <Title>Escolha a data</Title>
           <OpenDatePickerButton onPress={handleToggleDatePicker}>

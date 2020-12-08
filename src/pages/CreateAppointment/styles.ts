@@ -66,11 +66,13 @@ export const ProviderContainer = styled(RectButton)<ProviderContainerProps>`
   margin-right: 16px;
   border-radius: 10px;
 `;
+
 export const ProviderAvatar = styled.Image`
   width: 32px;
   height: 32px;
   border-radius: 16px;
 `;
+
 export const ProviderName = styled.Text<ProviderNameProps>`
   margin-left: 8px;
   font-family: 'RobotoSlab-Medium';
