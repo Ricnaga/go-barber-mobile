@@ -111,6 +111,7 @@ const CreateAppointment: React.FC = () => {
   const handleCreateAppointment = useCallback(async () => {
     try {
       const date = new Date(selectedDate);
+
       date.setHours(selectedHour);
       date.setMinutes(0);
 
